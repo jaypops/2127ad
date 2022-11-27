@@ -34,7 +34,7 @@ p{
 .cover{
   display: flex;
   justify-content: space-around;
-  margin: 50px 0;
+  margin: 5px 0;
   position:fixed;
   z-index: 999999;
   backdrop-filter: blur(20px);
@@ -248,10 +248,11 @@ nav ul li a:hover:after{
     border-radius: 15px;
     box-shadow: #fff;
 }
-.cover{
+.cover_{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 50px;
+    justify-content: space-between;
+    margin: 0 100px;
 }
 .team_ h4{
     color: #fff;
@@ -287,4 +288,37 @@ nav ul li a:hover:after{
     padding: 30px;
     font-size: 60px;
     font-weight: bold;
+}
+@media screen and (max-width: 930px) {
+    nav ul li{
+        display: none;
+    }
+    .toggle{
+        position: fixed;
+        inset: 0 0 0 0;
+        background: rgba(41, 9, 9, 0.938);
+        padding: min(30vh, 10rem) 2em;
+      }
+      .hidden{
+        display: none;
+      }
+      .toggle ul li {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 30px;
+      }
+      .close{
+       position: relative;
+      }
+      .open{
+        display: block;
+        position: relative;
+        top: 25px;
+        left: 20px;
+        font-size: 50px;
+      }
+      .logo h4{
+          margin: 20px -150px;
+
+      }
 }
