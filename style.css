@@ -290,35 +290,15 @@ nav ul li a:hover:after{
     font-weight: bold;
 }
 @media screen and (max-width: 930px) {
-    nav ul li{
-        display: none;
-    }
-    .toggle{
-        position: fixed;
-        inset: 0 0 0 0;
-        background: rgba(41, 9, 9, 0.938);
-        padding: min(30vh, 10rem) 2em;
-      }
-      .hidden{
-        display: none;
-      }
-      .toggle ul li {
-        display: flex;
-        flex-direction: column;
-        margin: 30px 30px;
-      }
-      .close{
-       position: relative;
+   .logo h4{
+          font-size: 60px;
+          margin: 20px -95px;
       }
       .open{
         display: block;
         position: relative;
-        top: 25px;
-        left: 20px;
-        font-size: 50px;
-      }
-      .logo h4{
-          margin: 20px -150px;
-
+        top: 30px;
+        left: 80px;
+        font-size: 40px;
       }
 }
