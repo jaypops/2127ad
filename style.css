@@ -347,6 +347,9 @@ nav ul li a:hover:after{
     padding: 0 90px 30px 150px;
     text-align: center;
  }
+    .swiper{
+     width: 350px;
+ }
  .leg p{
     padding: 0 50px 30px 50px;
     text-align: left;
