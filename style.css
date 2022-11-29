@@ -34,11 +34,11 @@ p{
 .cover{
   display: flex;
   justify-content: space-around;
-  margin: 5px 0;
+  /* margin: -70px 0; */
   position:fixed;
   z-index: 999999;
+  width: 100vw;
   backdrop-filter: blur(20px);
-  width: 100%;
 }
 nav ul li{
     display: inline-block;
@@ -76,7 +76,7 @@ nav ul li a:hover:after{
 .logo h4{
     font-family: 'Rubik Distressed', cursive;
     color: #a0a0a0;
-    /* font-weight: bold; */
+    font-weight: bold;
     font-size: 70px;
 }
 .main_body{
@@ -137,7 +137,8 @@ nav ul li a:hover:after{
     text-transform: uppercase;
 }
 .colonies__ .colo p{
-    padding: 20px 0 0 0;
+    text-align: justify;
+    padding: 20px 130px 0 0;
     color: #a0a0a0;
 }
 .nft_image img{
@@ -157,7 +158,8 @@ nav ul li a:hover:after{
     text-transform: uppercase;
 }
 .podcast__ .pod p{
-    padding: 20px 0 0 0;
+    text-align: justify;
+    padding:  20px 0 0 0;
     color: #a0a0a0;
 }
 .nft__image img{
@@ -196,7 +198,8 @@ nav ul li a:hover:after{
     text-transform: uppercase;
 }
 .wtf .tf p{
-    padding: 20px 0 0 0;
+    text-align: justify;
+    padding: 20px 130px 0 0;
     color: #a0a0a0;
 }
 .nft_wtf img{
@@ -289,16 +292,94 @@ nav ul li a:hover:after{
     font-size: 60px;
     font-weight: bold;
 }
-@media screen and (max-width: 930px) {
-   .logo h4{
-          font-size: 60px;
-          margin: 20px -95px;
-      }
-      .open{
+@media screen and (max-width: 1090px) {
+    .open{
         display: block;
         position: relative;
         top: 30px;
         left: 80px;
-        font-size: 40px;
-      }
+        font-size: 35px;
+    }
+    .logo h4{
+       font-size: 60px;
+       margin: 20px -95px;
+       position: relative;
+       left: 35px;
+   }
+   ul li a{
+       position: relative;
+       top: 70px;
+   }
+   .cover{
+       position: absolute;
+       top: 20px;
+       left: 0;
+       right: 0;
+       width: 100vw;
+       backdrop-filter: blur(20px);
+       transition: 0.2s;
+       /* opacity: 0; */
+       overflow: hidden;
+       height: 100px;
+   }
+   .cover.active{
+       height: 650px;
+   }
+   .toggle{
+     position: fixed;
+     inset: 0 0 0 0;
+     padding: min(10vh, 1rem) 1em;
+   }
+   .toggle ul li {
+     display: flex;
+     flex-direction: column;
+     margin: auto 350px;
+   }
+   .main_body .heading h1{
+       font-size: 50px;
+   }
+   .colonies__{
+       display: inline-block;
+       justify-content: center;
+       align-items: center;
+   }
+   .colonies__ .colo h3{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 70px;
+   }
+   .colonies__ .colo p{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 10px 0 0 0;
+   }
+   .nft_image img{
+       position: relative;
+       top: 20px;
+       width: 500px;
+   } 
+   .wtf .tf h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+   }
+   .wtf .tf p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 0 0;
+   }
+   .nft_wtf img{
+    position: relative;
+    top: 20px;
+    width: 500px;
+   }
+   .wtf{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+   }
 }
