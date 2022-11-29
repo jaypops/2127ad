@@ -295,11 +295,12 @@ nav ul li a:hover:after{
        justify-content: center;
    }
     .nft_colo img, .nft_wtf img{
-       display: flex;
+       display: block;
        justify-content:center;
        height: 300px;
+       width: 300px;
        position: relative;
-       left: 130px;
+      left: 50px;
    }
    .podcast__, .doa{
     display: block;
@@ -313,7 +314,7 @@ nav ul li a:hover:after{
     bottom: 300px;
    }
    .podcast__ .pod h3, .doa .do h3{
-    display: flex;
+    display: block;
     justify-content: center;
     position: relative;
     bottom: 300px;
@@ -321,19 +322,20 @@ nav ul li a:hover:after{
    }
    .doa_image img, .nft__image img{
     display: flex;
+    width: 300px;
+    height: 300px;
     justify-content:center;
     position: relative;
     top: 300px;
-    height: 300px;
-    left: 130px;
+    left: 50px;
    }
    .podcast__ .pod p{
        position: relative;
-       bottom: 320px;
+       bottom: 380px;
    }
    .podcast__ .pod h3{
     position: relative;
-    bottom: 290px;
+    bottom: 360px;
    }
    .nft__image img{
        position: relative;
@@ -341,14 +343,14 @@ nav ul li a:hover:after{
    }
    .doa_image img{
     position: relative;
-    top: 235px;
+    top: 320px;
    }
    .tv .tvh p{
-    padding: 0 90px 30px 150px;
+    padding: auto;
     text-align: center;
  }
-    .swiper{
-     width: 350px;
+ .swiper{
+     width: 300px;
  }
  .leg p{
     padding: 0 50px 30px 50px;
