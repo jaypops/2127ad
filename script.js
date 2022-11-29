@@ -17,4 +17,13 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
-  
+// const open = document.querySelector(".open");
+// const cover = document.querySelector(".cover");
+// open.addEventListener('click', function(){
+//   cover.style.height = 650;
+// })
+open = document.querySelector(".open");
+open.onclick = function(){
+  cover = document.querySelector(".cover");
+  cover.classList.togglr("active");
+}
