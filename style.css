@@ -245,6 +245,37 @@ nav ul li a:hover:after{
     font-size: 60px;
     font-weight: bold;
 }
+audio{
+    position: relative;
+    top: 00px;
+}
+audio::-webkit-media-controls-panel{
+    background-color: #27bd59;
+}
+audio::-webkit-media-controls-play-button{
+    background-color: #a0a0a0;
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-current-time-display{
+    color: #333;
+}
+audio::-webkit-media-controls-time-remaining-display{
+    color: #333;
+}
+audio::-webkit-media-controls-timeline{
+    border-radius: 40px;
+    background-color: #a0a0a0;
+}
+audio::-webkit-media-controls-volume-slider{
+    background-color: #a0a0a0;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+audio::-webkit-media-controls-mute-button{
+    background-color: #a0a0a0;
+    border-radius: 50%;
+}
 @media screen and (max-width: 1090px) {
     .open{
         display: block;
@@ -266,7 +297,6 @@ nav ul li a:hover:after{
        transition: 0.2s;
        overflow: hidden;
        height: 100px;
-       /* if you change height to 650px check what will happen this code has a mind of it's own.  */
    }
    .cover .active{
        height: 650px;
