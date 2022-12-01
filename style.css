@@ -247,7 +247,7 @@ nav ul li a:hover:after{
 }
 audio{
     position: relative;
-    top: 00px;
+    top: 100px;
 }
 audio::-webkit-media-controls-panel{
     background-color: #27bd59;
