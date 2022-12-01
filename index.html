@@ -10,17 +10,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="nav-bar">
     <div class="main">
-        <div class="nav-bar">
-            <nav id="scroll">
-                <div class="cover cov">
-                    <div class="logo"><h4>2137ad.</h4></div> 
-                  <div class="navbar">
-                    <div class="open">
-                        <i class="fa-solid fa-bars"></i>
-                      </div>
-                    <div class="toggle hidden">
-                      <ul>
+        <header class="header-area">
+            <div class="header-container">
+                <div class="site-logo">
+                    <a href="#">2137ad.</a>
+                </div>
+                <div class="mobile-nav">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="site-nav-menu">
+                    <ul class="primary-menu">
+                        <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="#c">10colonies</a></li>
                         <li><a href="#d">podcast</a></li>
                         <li><a href="#e">tvseries</a></li>
@@ -28,24 +30,24 @@
                         <li><a href="#g">doa</a></li>
                         <li><a href="#h">team</a></li>
                         <li><a href="#i">legal</a></li>
-                      </ul>
-                    </div>
-                  </div>
+                    </ul>
                 </div>
-            </nav>
-            <section>
-                <div class="main_body">
-                    <div class="heading">
-                        <h1>AGGIUNGI QUI IL TESTO DELL'INTESTAZIONE</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta esse labore distinctio nihil sed vero alias aperiam fuga tempore quas suscipit animi, expedita eaque perferendis obcaecati veniam delectus cum?</p>
-                        <h2><a href="#c">learn more</a></h2>
-                         <audio controls loop>
-                            <source src="audio.mp3" type="audio/mpeg">
-                        </audio>
-                    </div>
+            </div>
+        </header>
+        <section>
+            <div class="main_body">
+                <div class="heading">
+                    <h1>AGGIUNGI QUI IL TESTO DELL'INTESTAZIONE</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta esse labore distinctio nihil sed vero alias aperiam fuga tempore quas suscipit animi, expedita eaque perferendis obcaecati veniam delectus cum?</p>
+                    <h2><a href="#c">learn more</a></h2>
+                    <audio controls loop>
+                        <source src="audio.mp3" type="audio/mpeg">
+                    </audio>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+    </div>
+    </div>
         <div class="main_body2">
             <section>
                     <div class="colonies__">
@@ -190,6 +192,14 @@
      <script>
         AOS.init();
       </script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".mobile-nav i").click(function(){
+                $(".site-nav-menu").toggleClass("mobile-menu");
+            });
+        });
+    </script>
      <script src="script.js"></script>
 </body>
 </html>
