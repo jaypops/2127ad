@@ -254,20 +254,6 @@ p{
 .team_ a:hover{
     color: #3cff7d;
 }
-.last{
-    background-color: #111;
-}
-.leg p{
-   padding: 0 100px 30px 100px;
-}
-.leg h3{
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-    font-size: 60px;
-    font-weight: bold;
-}
 audio{
     position: relative;
     top: 100px;
@@ -299,7 +285,7 @@ audio::-webkit-media-controls-mute-button{
     background-color: #a0a0a0;
     border-radius: 50%;
 }
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 955px) {
     .site-nav-menu {
         float: none;
         position: absolute;
